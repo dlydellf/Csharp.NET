@@ -21,7 +21,7 @@ namespace Daily_Report
             Console.WriteLine("\nDo you need help with anything?\nPlease answer \"true\" or \"false\"."); // 4th required question (can only return a STRING)
             string trueFalse = Console.ReadLine(); // Assigns 4th question's STRING answer to a TEMP variable for converting...
             bool needHelp = Convert.ToBoolean(trueFalse); // Converts 4th's string -> BOOLEAN
-            Console.WriteLine("Were there any positive experiences you'd like to share?  Please be specific."); // 5th required question
+            Console.WriteLine("Were there any positive experiences you'd like to share?  Please give specifics."); // 5th required question
             string experiences = Console.ReadLine(); // Assigns 5th question's answer to a variable; saves according to its proper data type
 
             // Displays all entered data, if User desires:
