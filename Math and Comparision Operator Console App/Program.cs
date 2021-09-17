@@ -28,9 +28,8 @@ namespace Math_and_Comparision_Operator_Console_App
             */
             decimal annualSalary1 = (hourlyRate1 * weeklyHours1) * 52;
             Console.WriteLine($"\nAnnual salary of Person 1:\n{annualSalary1}");
-            Console.ReadLine();
             decimal annualSalary2 = (hourlyRate2 * weeklyHours2) * 52;
-            Console.WriteLine($"\nAnnual salary of Person 2:\n{annualSalary2}");
+            Console.WriteLine($"Annual salary of Person 2:\n{annualSalary2}");
 
             Console.ReadLine();
 
