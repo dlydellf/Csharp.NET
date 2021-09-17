@@ -3,7 +3,7 @@ This repository will store the C# & .NET projects I complete as I progress throu
   - All created using C# 7.0 (or newer)
 
 ## Projects:
- - [ ] Daily Report project
+ - [x] Daily Report project
  - [ ] Math/Comparision Console App
  - [ ] Boolean Logic ("Insurance Approval")
  - [ ] Branching ("Price-Quote App")
