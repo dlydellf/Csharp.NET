@@ -19,6 +19,14 @@ namespace ConsoleApplication_Step185_
             int total = addend + 25;// Stores (userInput + 25)
             Console.WriteLine($"Your input of {usersInput}, increased by 25, is...{total}\n(\"Enter\" again, please)");
             Console.ReadLine();
+
+            Console.WriteLine("\n3rd Question - What number would you like divided by 12.5?"); // the 3rd requirement
+            string usersDividend = Console.ReadLine(); // assigning the string to a variable for its conversion...
+            decimal dividend = Convert.ToDecimal(usersDividend); // converting User's string -> more-specific decimal
+            decimal quotient = dividend / 12.5m; // stores (usersDividend / 12.5)
+            Console.WriteLine($"Your input of {usersDividend}, divided by 12.5, is...\n{quotient}\n(\"Enter\"... press it)");
+            Console.ReadLine();
+
         }
     }
 }
