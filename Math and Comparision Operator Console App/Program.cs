@@ -31,6 +31,10 @@ namespace Math_and_Comparision_Operator_Console_App
             decimal annualSalary2 = (hourlyRate2 * weeklyHours2) * 52;
             Console.WriteLine($"Annual salary of Person 2:\n{annualSalary2}");
 
+            // This code block determines who makes more money:
+            bool answer = annualSalary1 > annualSalary2; // comparision is made; a variable is assigned boolean's T/F answer
+            Console.WriteLine($"\nDoes Person 1 make more money than Person 2?\n{answer}");
+
             Console.ReadLine();
 
         }
