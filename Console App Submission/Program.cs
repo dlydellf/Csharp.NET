@@ -8,9 +8,9 @@ namespace Console_App_Submission
         static void Main()
         {
             int index = 20; // starting value of 20 assigned to int variable
-            while (index > -1) // condition: while index is greater than -1...
+            while (index > -1) // boolean condition: while index is greater than -1...
             {
-                Console.WriteLine($"{index}"); // ...display index's value
+                Console.WriteLine($"{index}"); // ...display index's value, 
                 --index; // ...and decrement index by 1
             }
             Console.ReadLine(); // Window stays open to view result
