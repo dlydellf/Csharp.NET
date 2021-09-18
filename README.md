@@ -5,7 +5,7 @@ This repository will store the C# & .NET projects I complete as I progress throu
 ## Projects:
  - [x] Daily Report project
  - [x] Math/Comparision Console App
- - [ ] Boolean Logic ("Insurance Approval")
+ - [x] Boolean Logic ("Insurance Approval")
  - [ ] Branching ("Price-Quote App")
  - [ ] Loops/Strings/Arrays ("Console App Pt.1-6")
  - [ ] Exception Handling ("Console App/Strings & Integers")
