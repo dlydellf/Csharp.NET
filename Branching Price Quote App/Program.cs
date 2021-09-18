@@ -22,7 +22,13 @@ namespace Branching_Price_Quote_App
                 Console.WriteLine("Please enter the package length:"); // User's 4th required prompt
                 int length = Convert.ToInt32(Console.ReadLine());// User's input returns a 'string'; this line converts it to 'int'
 
-                             }
+                /* This code block:
+                #1 - TOTALS package's dimensions; if > 50, displays the "too big" error msg.  If <= 50, then it...
+                #2 - Calculates package's volume (L x W x H), multiplies that by its weight, divides answer by 100, & displays result as the PRICE QUOTE
+                */
+                string quote = width + height + length > 50 ? "Package too big to be shipped via Package Express.": $"Your estimated total for shipping this package is: ${((length * width * height) * weight / 100).ToString()}.00\nThank you!";
+                Console.WriteLine(quote);
+            }
             Console.ReadLine();
         }
     }
