@@ -13,7 +13,16 @@ namespace Branching_Price_Quote_App
             {
                 Console.WriteLine("Package is too heavy to be shipped via Package Express. Have a good day."); // if weight > 50, this error displays and program exits
             }
+            else
+            {
+                Console.WriteLine("Please enter the package width:"); // User's 2nd required prompt
+                int width = Convert.ToInt32(Console.ReadLine());// User's input returns a 'string'; this line converts it to 'int'
+                Console.WriteLine("Please enter the package height:"); // User's 3rd required prompt
+                int height = Convert.ToInt32(Console.ReadLine());// User's input returns a 'string'; this line converts it to 'int'
+                Console.WriteLine("Please enter the package length:"); // User's 4th required prompt
+                int length = Convert.ToInt32(Console.ReadLine());// User's input returns a 'string'; this line converts it to 'int'
 
+                             }
             Console.ReadLine();
         }
     }
