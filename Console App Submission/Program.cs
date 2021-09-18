@@ -20,6 +20,7 @@ namespace Console_App_Submission
                 --index; // ...and decrement index by 1
             }
             Console.ReadLine(); // Window stays open to view result
+            StringBuilder
         }
 
     }
