@@ -29,8 +29,8 @@ namespace Console_App_Pt1
             {
                 Console.WriteLine(j);
                 j++;
-                Console.ReadLine();
             }
+            Console.ReadLine();
 
             // PART 3:
             // (required "<" loop):
@@ -67,7 +67,7 @@ namespace Console_App_Pt1
             officeStuff.Add("windows");
             officeStuff.Add("stuff");
 
-            Console.WriteLine(officeStuff);
+            Console.WriteLine("Please enter text to search the list for:");
             Console.ReadLine();
         }
     }
