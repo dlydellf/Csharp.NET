@@ -9,7 +9,7 @@ namespace Console_App_Pt1
     class Program
     {
         static void Main()
-        {
+        {/*
             // PART 1:
             // The required array (of strings):
             string[] phrases = { "1) Here's your entered text: ", "2) Here's your entered text: ", "3) Here's your entered text: ", "4) Here's your entered text: ", "5) Here's your entered text: ", "6) Here's your entered text: ", "7) Here's your entered text: " };
@@ -53,21 +53,21 @@ namespace Console_App_Pt1
             Console.WriteLine("Zero - I like displaying that number, even as a string!");
             Console.ReadLine();
 
-
+            */
             // PART 4:
             // (required list of unique strings):
-            List<string> officeStuff = new List<string>();
-            officeStuff.Add("desks");
-            officeStuff.Add("chairs");
-            officeStuff.Add("tables");
-            officeStuff.Add("computers");
-            officeStuff.Add("air vents");
-            officeStuff.Add("people");
-            officeStuff.Add("carpet");
-            officeStuff.Add("windows");
-            officeStuff.Add("stuff");
+            List<string> officeStuff = new List<string> { "desks", "chairs", "tables", "computers", "air vents", "people", "carpet", "windows", "stuff", "things", "items" };
 
-            Console.WriteLine("Please enter text to search the list for:");
+            Console.WriteLine("Please enter text to search the list for:"); // User asked for a searchable word
+            string usersWord = Console.ReadLine(); // User's reply saved to this string variable
+           
+            for (int i = 0; i < officeStuff.Count; i++) // searching every index of list for User's word
+            {
+                if (usersWord == officeStuff[i]) // does the User's word match the current index's value?
+                {
+                    Console.WriteLine($"Your word was found!  It's at Index {i}"); // Displaying the index of the matching text
+                }
+            }
             Console.ReadLine();
         }
     }
