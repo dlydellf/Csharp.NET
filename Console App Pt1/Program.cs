@@ -29,13 +29,11 @@ namespace Console_App_Pt1
             {
                 Console.WriteLine(j);
                 j++;
-
                 Console.ReadLine();
             }
 
             // PART 3:
             // (required "<" loop):
-
             int x = 0;
             while (x < 10)
             {
@@ -51,8 +49,26 @@ namespace Console_App_Pt1
                 Console.WriteLine($"{y} - I don't like displaying that number; I'll decrease it by 1");
                 Console.ReadLine();
                 y--;
-            }Console.WriteLine("Zero - I like displaying that number, even as a string!");Console.ReadLine();
+            }
+            Console.WriteLine("Zero - I like displaying that number, even as a string!");
+            Console.ReadLine();
 
+
+            // PART 4:
+            // (required list of unique strings):
+            List<string> officeStuff = new List<string>();
+            officeStuff.Add("desks");
+            officeStuff.Add("chairs");
+            officeStuff.Add("tables");
+            officeStuff.Add("computers");
+            officeStuff.Add("air vents");
+            officeStuff.Add("people");
+            officeStuff.Add("carpet");
+            officeStuff.Add("windows");
+            officeStuff.Add("stuff");
+
+            Console.WriteLine(officeStuff);
+            Console.ReadLine();
         }
     }
 }
