@@ -28,6 +28,8 @@ namespace Console_App_Pt1
             while (j < 10)
             {
                 Console.WriteLine(j);
+                j++;
+                Console.ReadLine();
             }
         }
     }
