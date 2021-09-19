@@ -10,6 +10,7 @@ namespace Console_App_Pt1
     {
         static void Main()
         {
+            // PART 1:
             // Required array of strings:
             string[] phrases = { "This is String0", "This is String1", "This is String2", "This is String3", "This is String4", "This is String5", "This is String6" };
             Console.WriteLine("Please enter some text below:"); // User required to input some text
@@ -21,6 +22,13 @@ namespace Console_App_Pt1
             }
             Console.ReadLine();
 
+            //PART 2:
+            // Adding the required infinite loop (j doesn't increment, so is ALWAYS < 10):
+            int j = 0;
+            while (j < 10)
+            {
+                Console.WriteLine(j);
+            }
         }
     }
 }
