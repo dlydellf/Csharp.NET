@@ -44,6 +44,15 @@ namespace Console_App_Pt1
             }
             Console.WriteLine("Ok, enough of that.");
             Console.ReadLine();
+            // required ">" loop:
+            int y = 10;
+            while (y > 0)
+            {
+                Console.WriteLine($"{y} - I don't like displaying that number; I'll decrease it by 1");
+                Console.ReadLine();
+                y--;
+            }Console.WriteLine("Zero - I like displaying that number, even as a string!");Console.ReadLine();
+
         }
     }
 }
