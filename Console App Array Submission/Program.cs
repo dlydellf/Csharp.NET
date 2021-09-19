@@ -21,7 +21,7 @@ namespace Console_App_Array_Submission
                     choice = Convert.ToInt32(Console.ReadLine()); //...and reassign the variable to their new choice
                 }
             // ...otherwise, continue program as intended:
-            Console.WriteLine(stringArray[choice]); // Array's string (at User's chosen index) is displayed to the console
+            Console.WriteLine($"\nHere's the string you chose:\n{stringArray[choice]}"); // Array's string (at User's chosen index) is displayed to the console
             Console.ReadLine(); // console remains opened for viewing
 
 
@@ -33,15 +33,14 @@ namespace Console_App_Array_Submission
             Console.WriteLine("Please select a number (0-7) to display the accompanying integer from the array:");
             // User's chosen number is captured, converted from a string into an int, & assigned to its own int-variable ("selection"):
             int selection = Convert.ToInt32(Console.ReadLine());
-            // Another if/else for indexes that don't exist:
-            if (selection > 7)
-            {
-                Console.WriteLine("Your chosen number is outside of the acceptable range of 0-7; please select again:");
-            }
-            else
-            {
-                Console.WriteLine(intArray[selection]); // Array's integer (at User's chosen index) is displayed to the console}
-            }
+                // Another while loop for indexes that don't exist:
+                while (selection > 7) // For selections outside the array's range...
+                { //... display this error message:
+                    Console.WriteLine("\nYour chosen number is outside of the acceptable range of 0 thru 7\nPlease select again:");
+                    selection = Convert.ToInt32(Console.ReadLine()); //... and reassign their next choice to the same int-variable
+                }
+            // ...if index is found, program displays their choice:
+            Console.WriteLine($"\nHere's your chosen intger: {intArray[selection]}");
             Console.ReadLine(); // console remains opened for viewing
         }
     }
