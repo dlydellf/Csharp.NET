@@ -10,9 +10,16 @@ namespace Console_App_Pt1
     {
         static void Main()
         {
-            string[] stringArray = { "This is String0", "This is String1", "This is String2", "This is String3", "This is String4", "This is String5", "This is String6" };
-
-            Console.WriteLine("Please enter some text below:");
+            // Required array of strings:
+            string[] phrases = { "This is String0", "This is String1", "This is String2", "This is String3", "This is String4", "This is String5", "This is String6" };
+            Console.WriteLine("Please enter some text below:"); // User required to input some text
+            string usersText = Console.ReadLine(); // User's input is saved to this string variable
+            // Looping through each index of 
+            foreach (string i in phrases)
+            {
+                Console.WriteLine(i + $"{usersText}"); // User's input is added to each index of array; loop prints each string on seperate line
+            }
+            Console.ReadLine();
 
         }
     }
