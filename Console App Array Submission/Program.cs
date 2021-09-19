@@ -42,6 +42,30 @@ namespace Console_App_Array_Submission
             // ...if index is found, program displays their choice:
             Console.WriteLine($"\nHere's your chosen intger: {intArray[selection]}");
             Console.ReadLine(); // console remains opened for viewing
+
+
+            // A list of strings, assigned to a string-variable ("stringList"):
+            List<string> stringList = new List<string>();
+            stringList.Add("This is Index Position 0");
+            stringList.Add("This is Index Position 1");
+            stringList.Add("This is Index Position 2");
+            stringList.Add("This is Index Position 3");
+            stringList.Add("This is Index Position 4");
+            stringList.Add("This is Index Position 5");
+
+            // Console displays this instruction to User:
+            Console.WriteLine("Please select a number (0-6) to display the accompanying string from the list:");
+            // User's chosen number is captured, converted from a string into an int, & assigned to an int-variable ("pick"):
+            int pick = Convert.ToInt32(Console.ReadLine());
+            // while loop used again:
+            while (pick > 6) // If User chooses an index that doesn't exist...
+            { // ...display this error message:
+                Console.WriteLine("\nWrong! 0 to 6, nothing else!\nChoose wiser this time.");
+                pick = Convert.ToInt32(Console.ReadLine()); //...and reassign the variable to their new choice
+            }
+            // ...otherwise, continue program as intended:
+            Console.WriteLine($"\nHere's the string you chose:\n{stringList[pick]}\nThanks for playing.  Goodbye"); // List's string (at User's chosen index) is displayed to the console
+            Console.ReadLine(); // console remains opened for viewing
         }
     }
 }
