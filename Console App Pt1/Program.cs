@@ -56,19 +56,32 @@ namespace Console_App_Pt1
             */
             // PART 4:
             // (required list of unique strings):
-            List<string> officeStuff = new List<string> { "desks", "chairs", "tables", "computers", "air vents", "people", "carpet", "windows", "stuff", "things", "items" };
+            List<string> officeStuff = new List<string> { "desks/tables", "chairs", "lights", "computers", "air vents", "people", "carpet", "windows", "stuff", "things"};
 
-            Console.WriteLine("Please enter text to search the list for:"); // User asked for a searchable word
-            string usersWord = Console.ReadLine(); // User's reply saved to this string variable
-           
-            for (int i = 0; i < officeStuff.Count; i++) // searching every index of list for User's word
+            Console.WriteLine("\nTry guessing 1 of the 10 'things' usually found within an 'OFFICE SETTING':"); // asks User for a searchable word
+            string usersGuess = Console.ReadLine(); // saves User's guess to a 'string' variable
+            // This loop checks every index of list for User's guess:
+            for (int i = 0; i < officeStuff.Count; i++)
             {
-                if (usersWord == officeStuff[i]) // does the User's word match the current index's value?
+                if (officeStuff[i].Contains(usersGuess)) // If current index's value matches User's guess (singular or plural)...
                 {
-                    Console.WriteLine($"Your word was found!  It's at Index {i}"); // Displaying the index of the matching text
-                }
+                    Console.WriteLine($"\nCongrats, you guessed correctly!!\nYour guess is at Index {i},\nranking it #{i+1}!"); // ...then display the matching text's index.
+                    Console.ReadLine(); // keeps console opened until User closes it
+                    return; // below code is now unreachable
+                } 
             }
+            Console.WriteLine("\nSorry - that wasn't one of our answers\n:("); // Otherwise, advise User that their guess wasn't on list
             Console.ReadLine();
         }
     }
 }
+
+/*
+for (i = 0; i < list.length; i++)
+{
+    if (word is found)
+    {write ("You win!"), then EXIT}
+
+}
+OTHERWISE, after checking EVERY INDEX - write(word NOT found; try again) 
+ */
