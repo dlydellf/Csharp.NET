@@ -53,7 +53,7 @@ namespace Console_App_Pt1
             Console.WriteLine("Zero - I like displaying that number, even as a string!");
             Console.ReadLine();
 
-            */
+            
             // PART 4:
             // (required list of unique strings):
             List<string> officeStuff = new List<string> { "desks/tables", "chairs", "lights", "computers", "air vents", "people", "carpet", "windows", "stuff", "things"};
@@ -72,16 +72,14 @@ namespace Console_App_Pt1
             }
             Console.WriteLine("\nSorry - that wasn't one of our answers\n:("); // Otherwise, advise User that their guess wasn't on list
             Console.ReadLine();
+
+            */
+            // PART 5:
+            // required list containing dupolicate strings:
+            List<string> bills = new List<string> { "mortage", "rent", "insurance", "cable", "internet", "cell", "phone", "cellphone", "gas", "water", "electrical", "credit card" };
+
+            Console.WriteLine("Which of your ten monthly bills would you like to pay?"); // User is asked to search for text within list
+            string chosenBill = Console.ReadLine(); // Saves text to a 'string' variable
         }
     }
 }
-
-/*
-for (i = 0; i < list.length; i++)
-{
-    if (word is found)
-    {write ("You win!"), then EXIT}
-
-}
-OTHERWISE, after checking EVERY INDEX - write(word NOT found; try again) 
- */
