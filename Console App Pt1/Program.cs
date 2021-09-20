@@ -75,11 +75,39 @@ namespace Console_App_Pt1
 
             */
             // PART 5:
-            // required list containing dupolicate strings:
-            List<string> bills = new List<string> { "mortage", "rent", "insurance", "cable", "internet", "cell", "phone", "cellphone", "gas", "water", "electrical", "credit card" };
+            // required list [duplicate strings are: "cell" & "phone", occurring individually & within "cellphone"; "insurance", occurring individually & within "car insurance"):
+            List<string> bills = new List<string> { "mortage", "insurance", "car insurance", "cable", "internet", "cell", "phone", "cellphone", "gas", "water", "electrical", "credit card" };
 
-            Console.WriteLine("Which of your ten monthly bills would you like to pay?"); // User is asked to search for text within list
-            string chosenBill = Console.ReadLine(); // Saves text to a 'string' variable
+            Console.WriteLine("Guess which of your 12 monthly bills is due today?"); // User is asked to search for text within <bills>
+            string chosenBill = Console.ReadLine(); // Saves text to a <string> variable
+
+            int billCounter = 0; // this counter records how many times <chosenBill> is found within <bills>
+            List<int> billIndices = new List<int>(); // this empty <list> will hold <chosenBill>'s index locations
+
+            // Loop that checks <bills> for User's entered text:
+            for (int index = 0; index < bills.Count; index++) // As each index is reached...
+            {
+                if (bills[index].Contains(chosenBill)) // ...if <chosenBill> is found, 
+                {
+                    billIndices.Add(index);// ...add the index to <billIndices>,
+                    billCounter = billCounter + 1; // ...and increase counter by 1, ("+1" works here, but NOT "++" ???)
+                }
+            }
+            switch (billCounter) // <billCounter>'s value is compared against both cases...
+            {
+                 case 1: // ...for single bills, one index displays.
+                    Console.WriteLine($"Your {chosenBill} bill was found once, at index {billIndices[0]}.");
+                    Console.ReadLine();
+                    break;
+                case 2: // ...for multiple bills, BOTH indices display.
+                    Console.WriteLine($"Your {chosenBill} bill was found more than once, at indices {billIndices[0]} & {billIndices[1]}.");
+                    Console.ReadLine();
+                    break;
+                default: // User is advised of no matching bills
+                    Console.WriteLine($"Congrats! You don't have a \"{chosenBill}\" bill to pay!");
+                    Console.ReadLine();
+                    break;
+            }
         }
     }
 }
