@@ -73,7 +73,7 @@ namespace Console_App_Pt1
             Console.WriteLine("\nSorry - that wasn't one of our answers\n:("); // Otherwise, advise User that their guess wasn't on list
             Console.ReadLine();
 
-            */
+            
             // PART 5:
             // required list [duplicate strings are: "cell" & "phone", occurring individually & within "cellphone"; "insurance", occurring individually & within "car insurance"):
             List<string> bills = new List<string> { "mortage", "insurance", "car insurance", "cable", "internet", "cell", "phone", "cellphone", "gas", "water", "electrical", "credit card" };
@@ -108,6 +108,15 @@ namespace Console_App_Pt1
                     Console.ReadLine();
                     break;
             }
+            */
+
+            // PART 6:
+            // required list [duplicate strings are: "other", "additional" & "more"]:
+            List<string> items = new List<string> { "first", "second", "other", "additional", "more", "more", "additional", "other", "last" };
+
+
+
+
         }
     }
 }
