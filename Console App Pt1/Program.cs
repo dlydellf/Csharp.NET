@@ -119,34 +119,27 @@ namespace Console_App_Pt1
             foreach (var item in firstList.Select((name, index) => (name, index))) // Captures every item's name & index...
             {
                 secondList.Add(item.name); // ...and adds them to the 2ndList.
-                Console.WriteLine($"2ndList has Item: {secondList[item.index]}\n\t@ Index: {item.index}"); // TESTING / g2g
+                Console.WriteLine($" Item: {secondList[item.index]}\n\tIndex ({item.index})"); // TESTING - g2g
             }
             Console.ReadLine();
-            int counter = 0; // this counter records how many times items (from 1stList) are found within 2ndList
-            List<string> indices = new List<string>(); // this empty <list> will hold 2ndList's index locations
+            int counter = 0; // this counter records how many times 1stList's items are found within 2ndList
+            List<string> multipleStrings = new List<string>(); // this empty <list> will hold index locations of the 2ndList's items
 
-            foreach (var item in firstList.Select((name, index) => (name, index))) // for each item in initial <list>...
+            // For each item in the 1stList...
+            foreach (var item in firstList.Select((name, index) => (name, index)))
             {
-                foreach (var duplicate in secondList.Select((name, index) => (name, index))) //... check it against 2ndList's contents
+                counter = 0;
+                foreach (var duplicate in secondList.Select((name, index) => (name, index))) //... search the 2ndList's contents for duplicates.
                 {
-                    if (secondList[duplicate.index].Contains(item.name))
+                    if (duplicate.name == item.name)
                     {
                         counter++;
-                        indices.Add($"Found {item.name}: {counter}x\n");
+                        multipleStrings.Add($"1stList ITEM \"{item.name}\" is within the 2ndList @ INDEX {duplicate.index}: Pass #{counter}");
                     }
-                }Console.WriteLine(indices[item.index]);
+                }
+                Console.WriteLine(multipleStrings[item.index]); // TESTING - g2g!!
             }
             Console.ReadLine();
         }
     }
 }
-
-/*foreach (var item in items.Select((name, index) => (name, index))) // Captures the name & index of every item
-            {
-                string currentItem = item.name // within "foreach" loop, this variable will be used for comparing duplicates
-                if (item.name == currentItem)
-                {
-                    Console.WriteLine($"Name: {currentItem}\nIndex: {item.index}\n");
-                }
-                
-            }*/
