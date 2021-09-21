@@ -119,7 +119,7 @@ namespace Console_App_Pt1
             foreach (var item in firstList.Select((name, index) => (name, index))) // Captures every item's name & index...
             {
                 secondList.Add(item.name); // ...and adds them to the 2ndList.
-                Console.WriteLine($" Item: {secondList[item.index]}\n\tIndex ({item.index})"); // TESTING - g2g
+                //Console.WriteLine($" Item: {secondList[item.index]}\n\tIndex ({item.index})"); // TESTING - g2g
             }
             Console.ReadLine();
             int counter = 0; // this counter records how many times 1stList's items are found within 2ndList
@@ -134,7 +134,7 @@ namespace Console_App_Pt1
                     if (duplicate.name == item.name)
                     {
                         counter++;
-                        multipleStrings.Add($"1stList ITEM \"{item.name}\" is within the 2ndList @ INDEX {duplicate.index}: Pass #{counter}");
+                        multipleStrings.Add($"The string \"{item.name}\" appears within the list (at index {duplicate.index}); it displays {counter} time(s)");
                     }
                 }
                 Console.WriteLine(multipleStrings[item.index]); // TESTING - g2g!!
