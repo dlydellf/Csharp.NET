@@ -90,7 +90,7 @@ namespace Console_App_Pt1
                 if (bills[index].Contains(chosenBill)) // ...if <chosenBill> is found, 
                 {
                     billIndices.Add(index);// ...add the index to <billIndices>,
-                    billCounter = billCounter + 1; // ...and increase counter by 1, ("+1" works here, but NOT "++" ???)
+                    billCounter++; // ...and increment counter by 1
                 }
             }
             switch (billCounter) // <billCounter>'s value is compared against both cases...
@@ -114,9 +114,30 @@ namespace Console_App_Pt1
             // required list [duplicate strings are: "other", "additional" & "more"]:
             List<string> items = new List<string> { "first", "second", "other", "additional", "more", "more", "additional", "other", "last" };
 
+            int indexOut = 0; // an index-identifier
+            int innerPasses = 0; // 2nd loop's counter <-----------  TESTING / DELETE
+            int foundBefore = 0; // a count of how often each string appears
 
+            // The 1st, OUTER 'foreach' loop to evaluate <list>'s items:
+            foreach (var item in items)
+            {
+                Console.WriteLine($"The 1st loop is at item: {item}"); // Record beginning of each OUTER LOOP iteration
+                indexOut++; // Record each item's index during OUTER loop - g2g
 
-
+                // The 2nd, INNER loop (making a 2nd pass to check for duplicate strings) - (NOT g2g!)
+                foreach (var otherItems in items)
+                {
+                    Console.WriteLine($"THE 2nd LOOP IS AT ITEM: {otherItems}"); // Record beginning of each INNER LOOP iteration
+                    innerPasses++; // Record each iteration of the INNER loop
+                    if (otherItems == item) // When remaining items == string from 1st loop... (NOT exactly g2g!)
+                    {
+                        Console.WriteLine("\t\t<--------Item below is a NESTED LOOP match"); //.. announce it, then...
+                        foundBefore++; //.. add +1 here
+                    }
+                    Console.WriteLine($"Item: {item}\nOuter Index:{indexOut}\nInner Loop:{innerPasses}\nSeen This Before?: {foundBefore}\n");
+                }
+            }
+            Console.ReadLine();         
         }
     }
 }
