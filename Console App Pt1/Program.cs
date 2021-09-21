@@ -112,32 +112,41 @@ namespace Console_App_Pt1
 
             // PART 6:
             // required list [duplicate strings are: "other", "additional" & "more"]:
-            List<string> items = new List<string> { "first", "second", "other", "additional", "more", "more", "additional", "other", "last" };
+            List<string> firstList = new List<string> { "first", "second", "other", "additional", "more", "more", "additional", "other", "last" };
+            List<string> secondList = new List<string> { }; // an empty <list> to store duplicates in
 
-            int indexOut = 0; // an index-identifier
-            int innerPasses = 0; // 2nd loop's counter <-----------  TESTING / DELETE
-            int foundBefore = 0; // a count of how often each string appears
-
-            // The 1st, OUTER 'foreach' loop to evaluate <list>'s items:
-            foreach (var item in items)
+            // Iterating through each item in the 1stList:
+            foreach (var item in firstList.Select((name, index) => (name, index))) // Captures every item's name & index...
             {
-                Console.WriteLine($"The 1st loop is at item: {item}"); // Record beginning of each OUTER LOOP iteration
-                indexOut++; // Record each item's index during OUTER loop - g2g
-
-                // The 2nd, INNER loop (making a 2nd pass to check for duplicate strings) - (NOT g2g!)
-                foreach (var otherItems in items)
-                {
-                    Console.WriteLine($"THE 2nd LOOP IS AT ITEM: {otherItems}"); // Record beginning of each INNER LOOP iteration
-                    innerPasses++; // Record each iteration of the INNER loop
-                    if (otherItems == item) // When remaining items == string from 1st loop... (NOT exactly g2g!)
-                    {
-                        Console.WriteLine("\t\t<--------Item below is a NESTED LOOP match"); //.. announce it, then...
-                        foundBefore++; //.. add +1 here
-                    }
-                    Console.WriteLine($"Item: {item}\nOuter Index:{indexOut}\nInner Loop:{innerPasses}\nSeen This Before?: {foundBefore}\n");
-                }
+                secondList.Add(item.name); // ...and adds them to the 2ndList.
+                Console.WriteLine($"2ndList has Item: {secondList[item.index]}\n\t@ Index: {item.index}"); // TESTING / g2g
             }
-            Console.ReadLine();         
+            Console.ReadLine();
+            int counter = 0; // this counter records how many times items (from 1stList) are found within 2ndList
+            List<string> indices = new List<string>(); // this empty <list> will hold 2ndList's index locations
+
+            foreach (var item in firstList.Select((name, index) => (name, index))) // for each item in initial <list>...
+            {
+                foreach (var duplicate in secondList.Select((name, index) => (name, index))) //... check it against 2ndList's contents
+                {
+                    if (secondList[duplicate.index].Contains(item.name))
+                    {
+                        counter++;
+                        indices.Add($"Found {item.name}: {counter}x\n");
+                    }
+                }Console.WriteLine(indices[item.index]);
+            }
+            Console.ReadLine();
         }
     }
 }
+
+/*foreach (var item in items.Select((name, index) => (name, index))) // Captures the name & index of every item
+            {
+                string currentItem = item.name // within "foreach" loop, this variable will be used for comparing duplicates
+                if (item.name == currentItem)
+                {
+                    Console.WriteLine($"Name: {currentItem}\nIndex: {item.index}\n");
+                }
+                
+            }*/
