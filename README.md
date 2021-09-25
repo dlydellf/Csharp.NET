@@ -8,7 +8,7 @@ This repository will store the C# & .NET projects I complete as I progress throu
  - [x] Boolean Logic ("Insurance Approval")
  - [x] Branching ("Price-Quote App")
  - [x] Loops/Strings/Arrays ("Console App Pt.1-6")
- - [ ] Exception Handling ("Console App/Strings & Integers")
+ - [x] Exception Handling ("Console App/Strings & Integers")
  - [ ] Method Fundamentals
  - [ ] Inheritance ("Methods & Objects")
  - [ ] Abstract Classes
