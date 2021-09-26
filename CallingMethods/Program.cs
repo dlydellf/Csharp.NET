@@ -10,8 +10,11 @@ namespace CallingMethods
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What number would you like to perform math operations on?");
-            int answer = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("What number would you like to perform math operations on?");
+                int number = Convert.ToInt32(Console.ReadLine());
+            }
         }
     }
 }
