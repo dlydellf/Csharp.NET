@@ -13,8 +13,17 @@ namespace MainMethod_Submission
         {
             int sum = numb1 + 10; // addition is performed
             Console.WriteLine($"{numb1} + 10 = {sum}"); // displays result to console
-            Console.ReadLine(); // console stays opened until User closes it
+            Console.ReadLine(); // console stays opened for User's review
             return sum;
+        }
+
+        // 2nd required class; same name, but accepts a <decimal> for subtraction:
+        public static decimal firstMethod(decimal numb2)
+        {
+            decimal difference = 100000 - numb2; // subtraction is performed
+            Console.WriteLine($"\n100,000 - {numb2} = {difference}"); // displays difference to console
+            Console.ReadLine(); // console stays opened until User closes it
+            return difference;
         }
     }
 }
