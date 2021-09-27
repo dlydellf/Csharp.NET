@@ -10,7 +10,7 @@ namespace MainMethod_Submission
     {
         static void Main(string[] args)
         {
-
+            CreatedClass.firstMethod(50); // instantiated the "CreatedClass" class and called its sole method, passing in an <int>
         }
     }
 }
