@@ -10,8 +10,10 @@ namespace MainMethod_Submission
     {
         static void Main(string[] args)
         {
-            CreatedClass.firstMethod(50); // instantiated the "CreatedClass" class and called its sole method, passing in an <int>
-            CreatedClass.firstMethod(100.95m); // instantiated the "CreatedClass" class and called its 2nd method, passing in a <decimal>
+            CreatedClass.RepeatedMethod(50); // instantiated the "CreatedClass" class and called its sole method, passing in an <int>
+            CreatedClass.RepeatedMethod(100.95m); // instantiated the "CreatedClass" class and called its 2nd method, passing in a <decimal>
+            //CreatedClass.RepeatedMethod("five"); // <--- error-checking
+            CreatedClass.RepeatedMethod("500");
         }
     }
 }
