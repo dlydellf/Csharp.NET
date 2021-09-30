@@ -19,8 +19,8 @@ namespace Method_Submission
                 Console.WriteLine("(Optional) Please enter a 2nd number\n(to multiply by your 1st number):");
                 try
                 {
-                    int num2 = Convert.ToInt32(Console.ReadLine()); // Treis converting (& assigning) User's 2nd input to <int> "num2"
-                    CreatedClass.createdMethod(num1, num2); // if SUCCESSFUL, calls mathod w/both inputs
+                    int num2 = Convert.ToInt32(Console.ReadLine()); // Tries converting (& assigning) User's 2nd input to <int> "num2"
+                    CreatedClass.createdMethod(num1, num2); // if SUCCESSFUL, calls method w/both inputs
                 }
                 catch (Exception ex) // catches ANY exceptions w/User's 2nd input
                 {
