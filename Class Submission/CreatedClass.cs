@@ -17,5 +17,12 @@ namespace Class_Submission
             Console.WriteLine($"Your entered numbeer, {num1}, divided by 2\nequals {result}");
             Console.ReadLine(); // keeps console opened for User's viewing
         }
+
+        // Required method w/an output parameter:
+        public void outputMethod(out string message)
+        {
+            string statement = "It's Friday!!!";
+            message = statement;
+        }
     }
 }
