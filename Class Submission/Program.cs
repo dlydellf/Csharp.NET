@@ -11,6 +11,7 @@ namespace Class_Submission
     {
         static void Main(string[] args)
         {
+            CreatedClass instantiatedClass = new CreatedClass(); // instantiates an instance of the class
         }
     }
 }
