@@ -21,8 +21,17 @@ namespace Class_Submission
         // Required method w/an output parameter:
         public void outputMethod(out string message)
         {
-            string statement = "It's Friday!!!";
-            message = statement;
+            string happyReminder = "It's Friday!!!";
+            message = happyReminder;
+            Console.WriteLine($"Today's Happy Reminder:\n{message}");
+        }
+
+        // Required "overloaded" method: same method (createdMethod), diff params (<int> & <string>)
+        public void createdMethod(out string message)
+        {
+            string happyMessage = "It's not Monday!";
+            message = happyMessage;
+            Console.WriteLine($"Today's Happy Message:\n{message}");
         }
     }
 }
