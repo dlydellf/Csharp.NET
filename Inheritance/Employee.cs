@@ -7,7 +7,7 @@ using System.Threading.Tasks;*/
 
 namespace Inheritance
 {
-    // Required class, inheriting from class "Person":
+    // Required class, which inherits from class "Person":
     class Employee : Person
     {
         // Required property:

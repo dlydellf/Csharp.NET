@@ -14,6 +14,7 @@ namespace Inheritance
             // Instantiating Employee class; initalizing new object w/values:
             Employee employee1 = new Employee() { FirstName = "Sample", LastName = "Student" };
             employee1.SayName();
+            Console.ReadLine();
         }
     }
 }
