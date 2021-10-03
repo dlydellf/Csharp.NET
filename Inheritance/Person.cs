@@ -13,5 +13,11 @@ namespace Inheritance
         // Required <string> properties:
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        // Required void method:
+        public void SayName()
+        {
+            Console.WriteLine($"Name: {FirstName} {LastName}");
+        }
     }
 }
