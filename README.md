@@ -9,7 +9,7 @@ This repository will store the C# & .NET projects I complete as I progress throu
  - [x] Branching ("Price-Quote App")
  - [x] Loops/Strings/Arrays ("Console App Pt.1-6")
  - [x] Exception Handling ("Console App/Strings & Integers")
- - [ ] Method Fundamentals
+ - [x] Method Fundamentals
  - [ ] Inheritance ("Methods & Objects")
  - [ ] Abstract Classes
  - [ ] Polymorphism
