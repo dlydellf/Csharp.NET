@@ -26,12 +26,12 @@ namespace Class_Submission
             Console.WriteLine($"Today's Happy Reminder:\n{message}");
         }
 
-        // Required "overloaded" method: same method (createdMethod), diff params (<int> & <string>)
-        public void createdMethod(string message)
+        // Required "overloaded" method: same method (createdMethod), diff NUMBER OF parameters
+        public void createdMethod(int num1, int num2)
         {
-            string happyMessage = "It's not Monday!";
-            message = happyMessage;
-            Console.WriteLine($"Today's Happy Message:\n{message}");
+            int result = num1 * num2;
+            Console.WriteLine($"{num1} x {num2} = {result}");
+            Console.ReadLine();
         }
     }
 }

@@ -17,6 +17,9 @@ namespace Class_Submission
                 Console.WriteLine("Please enter a number"); // User is asked to enter a number
                 int num1 = Convert.ToInt32(Console.ReadLine()); // User's input is converted from a <string> to an <int>
                 instantiatedClass.createdMethod(num1); // method is called with User's input
+                Console.WriteLine("Enter a second number:");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+                instantiatedClass.createdMethod(num1, num2); // method is overloaded; called w/User's additional parameter
             }
             catch (Exception ex)
             {
