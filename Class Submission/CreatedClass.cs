@@ -10,11 +10,11 @@ namespace Class_Submission
     // Required class:
     class CreatedClass
     {
-        // Required method; accepts an <int>, divides it by two, and outputs an <int>:
+        // Required void method; accepts an <int>, divides it by two, and outputs an <int>:
         public void createdMethod(int num1)
         {
             int result = num1 / 2;
-            Console.WriteLine($"Your entered numbeer, {num1}, divided by 2\nequals {result}");
+            Console.WriteLine($"Your entered number, {num1}, divided by 2\nequals {result}");
             Console.ReadLine(); // keeps console opened for User's viewing
         }
 
@@ -27,7 +27,7 @@ namespace Class_Submission
         }
 
         // Required "overloaded" method: same method (createdMethod), diff params (<int> & <string>)
-        public void createdMethod(out string message)
+        public void createdMethod(string message)
         {
             string happyMessage = "It's not Monday!";
             message = happyMessage;
