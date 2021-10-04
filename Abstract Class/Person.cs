@@ -10,8 +10,8 @@ namespace Abstract_Class
     public abstract class Person
     {
         // Required properties:
-        string firstName { get; set; }
-        string lastName { get; set; }
+        public string firstName { get; set; } // "public" == available throughout entire program
+        public string lastName { get; set; } // "public" == available throughout entire program
 
         // Required method:
         public virtual void SayName() // "virtual" == inheritable & implementable (via overriding)

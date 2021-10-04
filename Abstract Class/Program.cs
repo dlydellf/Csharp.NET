@@ -10,6 +10,13 @@ namespace Abstract_Class
     {
         static void Main(string[] args)
         {
+            Employee instantiatedEmployee = new Employee() { firstName = "Sample", lastName = "Student" };
+            {
+                void SayName() // calls the method on this oject
+                {
+
+                }
+            }
         }
     }
 }
