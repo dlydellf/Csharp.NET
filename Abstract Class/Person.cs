@@ -14,7 +14,7 @@ namespace Abstract_Class
         string lastName { get; set; }
 
         // Required method:
-        public void SayName()
+        public virtual void SayName() // "virtual" == inheritable & implementable (via overriding)
         {
 
         }
