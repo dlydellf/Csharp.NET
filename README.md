@@ -10,7 +10,7 @@ This repository will store the C# & .NET projects I complete as I progress throu
  - [x] Loops/Strings/Arrays ("Console App Pt.1-6")
  - [x] Exception Handling ("Console App/Strings & Integers")
  - [x] Method Fundamentals
- - [ ] Inheritance ("Methods & Objects")
+ - [x] Inheritance ("Methods & Objects")
  - [ ] Abstract Classes
  - [ ] Polymorphism
  - [ ] Debugging ("Operators Submission")
