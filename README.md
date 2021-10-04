@@ -11,7 +11,7 @@ This repository will store the C# & .NET projects I complete as I progress throu
  - [x] Exception Handling ("Console App/Strings & Integers")
  - [x] Method Fundamentals
  - [x] Inheritance ("Methods & Objects")
- - [ ] Abstract Classes
+ - [x] Abstract Classes
  - [ ] Polymorphism
  - [ ] Debugging ("Operators Submission")
  - [ ] Parsing Enums
