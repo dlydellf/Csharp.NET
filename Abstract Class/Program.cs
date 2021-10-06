@@ -12,10 +12,7 @@ namespace Abstract_Class
         {
             Employee instantiatedEmployee = new Employee() { firstName = "Sample", lastName = "Student" };
             {
-                void SayName() // calls the method on this oject
-                {
-
-                }
+                instantiatedEmployee.SayName(); // calls the method on this oject
             }
         }
     }
