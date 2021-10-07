@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Polymorphism
 {
-    // Required interface:
+    // Required interface (meets conventional naming convention):
     interface IQuittable
     {
-        // Required method:
+        // Required void method:
         void Quit();
     }
 }

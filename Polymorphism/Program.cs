@@ -10,6 +10,10 @@ namespace Polymorphism
     {
         static void Main(string[] args)
         {
+            IQuittable instantiatedObject = new Employee(); // new object of the interface's inheriting class
+            {
+                instantiatedObject.Quit(); // calling the Quit method on newly created interface object
+            };
         }
     }
 }

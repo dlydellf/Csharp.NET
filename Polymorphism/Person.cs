@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Abstract_Class
+namespace Polymorphism
 {
     // Required abstract class:
     public abstract class Person
