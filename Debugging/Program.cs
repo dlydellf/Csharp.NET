@@ -21,7 +21,7 @@ namespace Debugging
             employee2.DisplayId();
             employee3.DisplayId();
             employee4.DisplayId();
-            Console.WriteLine("Press "\Enter"\ to run a comparision between the Ids...");
+            Console.WriteLine("Press \"Enter\" to run a comparision between the Ids...");
             Console.ReadLine();
 
             // compares both sets of <int> Id values:
