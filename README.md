@@ -13,7 +13,7 @@ This repository will store the C# & .NET projects I complete as I progress throu
  - [x] Inheritance ("Methods & Objects")
  - [x] Abstract Classes
  - [x] Polymorphism
- - [ ] Debugging ("Operators Submission")
+ - [x] Debugging ("Operators Submission")
  - [ ] Parsing Enums
  - [ ] Lambda Expressions
  - [ ] Blackjack Game
