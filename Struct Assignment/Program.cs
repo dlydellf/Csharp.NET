@@ -12,6 +12,9 @@ namespace Struct_Assignment
         {
             Number createdNumberObject = new Number(); // creates object of dataType <Number>
             createdNumberObject.Amount = 1015.21m; // assigns an amount to newly created object
+
+            Console.WriteLine($"The amount assigned to the \"Number\" dataType's object is: {createdNumberObject.Amount}");
+            Console.ReadLine();
         }
 
         // created <struct> (named "Number") w/<decimal> property (called "Amount"):
