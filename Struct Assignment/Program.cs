@@ -10,6 +10,8 @@ namespace Struct_Assignment
     {
         static void Main(string[] args)
         {
+            Number createdNumberObject = new Number(); // creates object of dataType <Number>
+            createdNumberObject.Amount = 1015.21m; // assigns an amount to newly created object
         }
 
         // created <struct> (named "Number") w/<decimal> property (called "Amount"):
