@@ -10,9 +10,23 @@ namespace Parsing_Enums
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the current day of the week:"); // prompts User to enter current day of the week
-            DaysOfTheWeek enumDataTypeVariable = (DaysOfTheWeek)Convert.ToInt32(Console.ReadLine()); // User's <string> input converted & assigned to an <enum> variable dataType
+            Console.WriteLine("Please enter the current day of the week:"); // prompts User to enter the current Day of the Week
+            try
+            {
+                DaysOfTheWeek UsersInput = (DaysOfTheWeek)Enum.Parse(typeof(DaysOfTheWeek), Console.ReadLine()); // User's <string> input ("Console.ReadLine();") is parsed & assigned to newly created <enum> dataType ("DaysOfTheWeek UsersInput")
+                Console.WriteLine($"You entered {UsersInput} as the current day of the week"); // displays if (pseudocode) "DaysOfTheWeek.contains(UsersInput)"
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Please enter an actual day of the week"); // ANY exceptions will display this message
+            }
+            finally
+            {
+                Console.ReadLine();
+            }
         }
+
+        // an enum of the days of the week:
         public enum DaysOfTheWeek
         {
             Sunday,
