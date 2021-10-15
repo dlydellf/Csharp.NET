@@ -11,6 +11,7 @@ namespace Parsing_Enums
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter the current day of the week:"); // prompts User to enter current day of the week
+            DaysOfTheWeek enumDataTypeVariable = (DaysOfTheWeek)Convert.ToInt32(Console.ReadLine()); // User's input assigned to a variable of created enum dataType
         }
         public enum DaysOfTheWeek
         {
