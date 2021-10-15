@@ -14,7 +14,7 @@ This repository will store the C# & .NET projects I complete as I progress throu
  - [x] Abstract Classes
  - [x] Polymorphism
  - [x] Debugging ("Operators Submission")
- - [ ] Parsing Enums
+ - [x] Parsing Enums
  - [ ] Lambda Expressions
  - [ ] Blackjack Game
  - [ ] Date/Time
