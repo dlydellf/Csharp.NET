@@ -10,6 +10,7 @@ namespace Parsing_Enums
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please enter the current day of the week:"); // prompts User to enter current day of the week
         }
         public enum DaysOfTheWeek
         {
