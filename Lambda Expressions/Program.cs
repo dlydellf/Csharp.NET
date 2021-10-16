@@ -26,16 +26,24 @@ namespace Lambda_Expressions
                 new Employee { Id = 10, FName = "Employee", LName = "Ten" },
             };
 
+            /* Commenting-out to perform w/lambda expression instead:
             // new <List> to store employees named "Joe":
             List<Employee> Joes = new List<Employee>();
-
+                        
             foreach (Employee employee in employees) // loops through Line 14's "employees" <list>...
             {
                 if (employee.FName == "Joe") //... selecting every employee named "Joe"..
                 {
                     Joes.Add(employee); //... and adding them to the new "Joes" <list>
                 }
-            }
+            }*/
+            
+            // Same as above, but using a lambda expression instead:
+            List<Employee> Joes = (List<Employee>)employees.Where(x => x.FName == "Joe").ToList();
+
+            // testing only:
+            Console.WriteLine(Joes.Count);
+            Console.ReadLine();
         }
     }
 }
