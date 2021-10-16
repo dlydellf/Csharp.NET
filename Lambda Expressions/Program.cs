@@ -10,21 +10,21 @@ namespace Lambda_Expressions
     {
         static void Main(string[] args)
         {
-            List<string> employees = new List<string>();
-            employees.Add("01 - Joe Adams");
-            employees.Add("02 - Joe Biden");
-            employees.Add("03 - Douglas Foreman");
-            employees.Add("04 - Employee Four");
-            employees.Add("05 - Employee Five");
-            employees.Add("06 - Employee Six");
-            employees.Add("07 - Employee Seven");
-            employees.Add("08 - Employee Eight");
-            employees.Add("09 - Employee Nine");
-            employees.Add("10 - Employee Ten");
-
-            Console.WriteLine(employees.Count);
-            Console.ReadLine();
-
+            // creates new <List> (dataType == "<Employee>"), named "employees":
+            List<Employee> employees = new List<Employee>
+            {
+                // Adds 10 new employees to newly-created "employees" <List>:
+                new Employee { Id = 01, FName = "Joe", LName = "Adams" },
+                new Employee { Id = 02, FName = "Joe", LName = "Biden" },
+                new Employee { Id = 03, FName = "Douglas", LName = "Foreman" },
+                new Employee { Id = 04, FName = "Employee", LName = "Four" },
+                new Employee { Id = 05, FName = "Employee", LName = "Five" },
+                new Employee { Id = 06, FName = "Employee", LName = "Six" },
+                new Employee { Id = 07, FName = "Employee", LName = "Seven" },
+                new Employee { Id = 08, FName = "Employee", LName = "Eight" },
+                new Employee { Id = 09, FName = "Employee", LName = "Nine" },
+                new Employee { Id = 10, FName = "Employee", LName = "Ten" },
+            };
         }
     }
 }
