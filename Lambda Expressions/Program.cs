@@ -14,7 +14,7 @@ namespace Lambda_Expressions
             List<Employee> employees = new List<Employee>
             {
                 // Adds 10 new employees to newly-created "employees" <List>:
-                new Employee { Id = 01, FName = "Joe", LName = "Adams" },
+                new Employee { Id = 01, FName = "Joe", LName = "GI" },
                 new Employee { Id = 02, FName = "Joe", LName = "Biden" },
                 new Employee { Id = 03, FName = "Douglas", LName = "Foreman" },
                 new Employee { Id = 04, FName = "Employee", LName = "Four" },
@@ -26,7 +26,7 @@ namespace Lambda_Expressions
                 new Employee { Id = 10, FName = "Employee", LName = "Ten" },
             };
 
-            /* Commenting-out to perform w/lambda expression instead:
+            /* Commenting-out to perform w/lambda expression instead (see Line 41):
             // new <List> to store employees named "Joe":
             List<Employee> Joes = new List<Employee>();
                         
@@ -34,15 +34,18 @@ namespace Lambda_Expressions
             {
                 if (employee.FName == "Joe") //... selecting every employee named "Joe"..
                 {
-                    Joes.Add(employee); //... and adding them to the new "Joes" <list>
+                    Joes.Add(employee); //... and adds them to the new "Joes" <list>
                 }
             }*/
             
             // Same as above, but using a lambda expression instead:
             List<Employee> Joes = (List<Employee>)employees.Where(x => x.FName == "Joe").ToList();
 
+            // Uses a lambda expression to create a list of employees w/Id > 5:
+            List<Employee> IdMoreThan5 = (List<Employee>)employees.Where(x => x.Id > 5).ToList();
+
             // testing only:
-            Console.WriteLine(Joes.Count);
+            Console.WriteLine(IdMoreThan5.Count);
             Console.ReadLine();
         }
     }
