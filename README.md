@@ -15,8 +15,8 @@ This repository will store the C# & .NET projects I complete as I progress throu
  - [x] Polymorphism
  - [x] Debugging ("Operators Submission")
  - [x] Parsing Enums
- - [ ] Lambda Expressions
- - [ ] Blackjack Game
+ - [x] Lambda Expressions
+ - [x] Blackjack Game
  - [ ] Date/Time
  - [ ] Constructors
  - [ ] ASP.Net MVC Entity Framework ("Car Insurance App")
