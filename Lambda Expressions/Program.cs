@@ -43,10 +43,6 @@ namespace Lambda_Expressions
 
             // Uses a lambda expression to create a list of employees w/Id > 5:
             List<Employee> IdMoreThan5 = (List<Employee>)employees.Where(x => x.Id > 5).ToList();
-
-            // testing only:
-            Console.WriteLine(IdMoreThan5.Count);
-            Console.ReadLine();
         }
     }
 }
