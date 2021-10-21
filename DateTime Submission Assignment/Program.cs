@@ -20,7 +20,10 @@ namespace DateTime_Submission_Assignment
             try
             {
                 int UsersNumber = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(UsersNumber);
+
+                // Adding the User's number to current DateTime's "Hour" property:
+                Console.WriteLine($"\nAdvancing the current time by {UsersNumber} hours becomes:\n");
+                Console.WriteLine($"{DateTime.Now.AddHours(UsersNumber)}");
             }
             catch (FormatException)
             {
@@ -30,6 +33,7 @@ namespace DateTime_Submission_Assignment
             {
                 Console.ReadLine();
             }
+
         }
     }
 }
