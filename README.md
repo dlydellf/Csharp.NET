@@ -17,7 +17,7 @@ This repository will store the C# & .NET projects I complete as I progress throu
  - [x] Parsing Enums
  - [x] Lambda Expressions
  - [x] Blackjack Game
- - [ ] Date/Time
+ - [x] Date/Time
  - [ ] Constructors
  - [ ] ASP.Net MVC Entity Framework ("Car Insurance App")
  - [ ] Final Challenge

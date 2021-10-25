@@ -6,11 +6,11 @@ namespace ConsoleApplication_Step185_
     {
         static void Main()
         {
-            Console.WriteLine("Hi!\n1st Question - What whole number would you like multiplied by 50?"); // the 1st requirement
+            Console.WriteLine("Hi!\n1st Question - What whole number would you like multiplied by 20?"); // the 1st requirement
             string userInput = Console.ReadLine(); // User's input can ONLY be a string; is assigned to a variable for conversion...
             int multiplicand = Convert.ToInt32(userInput); // converting User's string -> int (whole numbers from -2 billion to 2 billion)
-            int product = multiplicand * 50;// storing (userInput x 50)
-            Console.WriteLine($"Your input of {userInput}, multiplied by 50, equals... {product}\n(Press \"Enter\" to continue, please)");
+            int product = multiplicand * 20;// storing (userInput x 20)
+            Console.WriteLine($"Your input of {userInput}, multiplied by 20, equals... {product}\n(Press \"Enter\" to continue, please)");
             Console.ReadLine();
 
             Console.WriteLine("\n2nd Question - What whole number would you like 25 added to?"); // the 2nd requirement
@@ -38,7 +38,7 @@ namespace ConsoleApplication_Step185_
             string userDividend = Console.ReadLine(); // number being divided is returned as a string & assigned to a variable for its conversion...
             decimal theDividend = Convert.ToDecimal(userDividend); // converting User's string -> more-specific decimal
             decimal theRemainder = theDividend % 7; // stores any reaminder from (theDividend / 7)
-            Console.WriteLine($"Your input of {userDividend}, divided by 7, has a remainder of... {theRemainder}\n\nTanks for playing - Hope you enjoyed this!");
+            Console.WriteLine($"Your input of {userDividend}, divided by 7, has a remainder of... {theRemainder}\n\nThanks for playing - Hope you enjoyed this!");
             Console.ReadLine();
         }
     }
