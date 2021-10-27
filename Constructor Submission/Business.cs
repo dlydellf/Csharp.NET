@@ -20,7 +20,7 @@ namespace Constructor_Submission
         // The "Business" object's 2nd CONSTRUCTOR (takes ONE argument) INHERITS from the previous constructor, above:
         // These constructors are now "CHAINED TOGETHER":
         public Business(string name) : this(name, "USA", 999 - 999 - 9999)  // [assigns the "name" argument to the "Name" property (Line 27); "location" & "phone" have default values]
-        {  // no inmplementation needed
+        {  // no implementation needed
         }
 
         // class's properties:
