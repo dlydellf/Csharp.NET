@@ -1,0 +1,17 @@
+﻿@* refers to the "Instructor class"'s model *@
+@using TechAcadStudentsMVC.Models
+@* defines the "model" being used, along w/its dataType: *@
+@model List<Instructor>
+
+@{
+    ViewBag.Title = "Instructors";
+}
+
+<h2>Instructors</h2>
+
+@{ 
+    foreach(Instructor instructor in Model)
+            {
+        <h4>@instructor.FirstName</h4>
+            }
+}
