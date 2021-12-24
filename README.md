@@ -1,5 +1,5 @@
 # C# & .NET
-This repository will store the C# & .NET projects I complete as I progress through the Tech Academy's cirriculum, beginning with the fundamentals and their "Daily Report" project, then continuing into a deep dive of topics covering Branching, Loops, Strings, & Arrays, Exception Handling, Abstract Classes, Inheritance, Polymorphism, Debugging, Lambda Expressions, and finally, a Portfolio project.
+This repository stores the C# & .NET projects I completed while progressing through the Tech Academy's cirriculum, beginning with the fundamentals and their "Daily Report" project, then continuing into a deep dive of topics covering Branching, Loops, Strings, & Arrays, Exception Handling, Abstract Classes, Inheritance, Polymorphism, Debugging, Lambda Expressions, and finally, an updated Portfolio project.
   - All created using C# 7.0 (or newer)
 
 ## Projects:
