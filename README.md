@@ -18,7 +18,7 @@ This repository will store the C# & .NET projects I complete as I progress throu
  - [x] Lambda Expressions
  - [x] Blackjack Game
  - [x] Date/Time
- - [ ] Constructors
- - [ ] ASP.Net MVC Entity Framework ("Car Insurance App")
- - [ ] Final Challenge
- - [ ] Portfolio
+ - [x] Constructors
+ - [x] ASP.Net MVC Entity Framework ("Car Insurance App")
+ - [x] Final Challenge
+ - [x] Portfolio
